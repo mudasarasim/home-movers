@@ -1,68 +1,74 @@
-// src/components/Footer.js
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaLinkedin, FaYoutube } from 'react-icons/fa';
-import './Footer.css';
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="footer bg-light text-dark pt-5">
+    <div style={{ backgroundColor: '#f8f8f8', padding: '40px 0', fontSize: '15px', position: 'relative' }}>
       <Container>
         <Row>
-          {/* <Col md={3}>
-            <h6 className="text-uppercase">Contact Us</h6>
-            <h6 className="mt-4 text-uppercase">Connect With Us</h6>
-            <div className="d-flex gap-3 mt-2">
-              <a href=" www.linkedin.com/in/mivaanengineering"><FaLinkedin size={24} /></a>
-              <a href="#"><FaYoutube size={24} /></a>
-            </div>
-          </Col> */}
-
-          <Col md={1}><div className="border-end h-100 mx-auto"></div></Col>
-
-          {/* <Col md={3}>
-            <h6 className="text-uppercase">About Us</h6>
-            <p className="mb-1">Overview</p>
-            <p className="mb-1">Our Timeline</p>
-            <p className="mb-1">Awards and Recognition</p>
-          </Col> */}
-
-          <Col md={1}><div className="border-end h-100 mx-auto"></div></Col>
-
-          {/* <Col md={2}>
-            <h6 className="text-uppercase">Capabilities</h6>
-            <p className="mb-1">News</p>
+          {/* Areas Served */}
+          <Col md={4} className="mb-4">
+            <h5 style={{ color: '#8b0000', fontWeight: 'bold' }}>AREAS WE SERVED BUT NOT LIMITED TO</h5>
+            <ul className="list-unstyled mt-3">
+              <li>Dubai</li>
+              <li>Abu Dhabi</li>
+              <li>Sharjah</li>
+              <li>Ras Al Khaimah</li>
+              <li>Fujairah</li>
+            </ul>
           </Col>
 
-          <Col md={2}>
-            <h6 className="text-uppercase">Careers</h6>
-            <p className="mb-1">Vendor Registration</p>
-          </Col> */}
-        </Row>
+          {/* Our Services */}
+          <Col md={4} className="mb-4">
+            <h5 style={{ color: '#8b0000', fontWeight: 'bold' }}>OUR SERVICES</h5>
+            <ul className="list-unstyled mt-3">
+              <li>Apartment Moving</li>
+              <li>Villa Movers</li>
+              <li>Office Relocation</li>
+              <li>Commercial Movers</li>
+              <li>Storage Services</li>
+            </ul>
+          </Col>
 
-        <hr className="my-4" />
-
-        <Row>
-          <Col>
-            <h6 className="mt-4 text-uppercase">Connect With Us</h6>
-            <div className="d-flex gap-3 mt-2">
-              <a
-                href="https://www.linkedin.com/in/mivaanengineering"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin size={24} />
-              </a>
-              {/* <a href="#"><FaYoutube size={24} /></a> */}
-            </div>
-            <p className="mb-1 text-muted mb-3">
-              Copyright 2025 © Mivaan Group. All rights reserved.
-            </p>
-          
+          {/* Reach Us */}
+          <Col md={4} className="mb-4">
+            <h5 style={{ color: '#8b0000', fontWeight: 'bold' }}>REACH US</h5>
+            <ul className="list-unstyled mt-3">
+              <li>Y16 – office Number 08 – Dubai</li>
+              <li>International City – England Cluster – Dubai</li>
+              <li className="mt-2"><FaPhoneAlt className="me-2 text-danger" />+971 56 239 0333</li>
+              <li><FaEnvelope className="me-2 text-danger" />info@ehome-emovers.ae</li>
+            </ul>
           </Col>
         </Row>
+
+        <hr />
+
+        <div className="text-center text-muted pt-3">
+          © 2025 E–Movers. All Rights Reserved. Web Solution by SC Studios
+        </div>
       </Container>
-    </footer>
+
+      {/* WhatsApp Button */}
+      <a
+        href="https://wa.me/971562390333"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          position: 'fixed',
+          bottom: '20px',
+          right: '20px',
+          zIndex: '9999',
+        }}
+      >
+        <img
+          src="https://img.icons8.com/color/96/000000/whatsapp--v1.png"
+          alt="WhatsApp"
+          style={{ height: '55px', width: '55px' }}
+        />
+      </a>
+    </div>
   );
 };
 

@@ -11,3 +11,22 @@ body {
   height: 40px;
   font-size: 14px;
 }
+
+/* index.css */
+.overlay-section {
+  position: relative;
+}
+
+.overlay-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: 1;
+}
+
+.overlay-section > * {
+  position: relative;
+  z-index: 2;
+}
+
