@@ -1,0 +1,15 @@
+.text-teal {
+  color: #286961;
+}
+
+.bg-teal {
+  background-color: #286961 !important;
+}
+
+.card .img-fluid {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .img-fluid {
+  transform: scale(1.03);
+}
