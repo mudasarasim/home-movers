@@ -1,227 +1,27 @@
-.hero-carousel {
-  height: 70vh;
-  overflow: hidden;
-  position: relative;
+/* Fade animation keyframes */
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-10px); }
 }
 
-.hero-image {
-  height: 73vh;
-  object-fit: cover;
-  filter: brightness(0.8);
-}
-
-.hero-image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 73vh;
-  background: linear-gradient(to right, rgba(29, 30, 30, 0.5), rgba(52, 51, 51, 0));
-  z-index: 1;
-}
-
-.carousel-caption {
-  z-index: 2;
-}
-
-/* Arrows container */
-.carousel-control-prev,
-.carousel-control-next {
-  width: 3.5rem;
-  height: 3.5rem;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(237, 237, 237, 0.6); /* dark circular background */
-  border-radius: 50%;
-  opacity: 1;
-  transition: background-color 0.3s ease;
-  z-index: 3;
-}
-
-/* Optional: hover effect */
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Arrow icons (make them thicker) */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-size: 75% 75%;
-  filter: brightness(0) invert(1);
-}
-
-.text-teal {
-  color: #286961;
-}
-
-.bg-teal {
-  background-color: #286961;
-}
-
-.list-group-item {
-  font-size: 0.95rem;
-}
-
-.bg-teal {
-  background-color: #286961;
-}
-
-.text-teal {
-  color: #286961;
-}
-
-.card .position-relative {
-  overflow: hidden;
-  border-radius: 8px;
-}
-
-.back{
-  height: 270px !important;
-}
-
-.card .position-relative img {
-  transition: transform 0.3s ease;
-}
-
-.card .position-relative:hover img {
-  transform: scale(1.05);
-}
-
-.card .translate-middle {
-  background: rgba(0, 0, 0, 0.4);
-  padding: 8px 16px;
-  border-radius: 4px;
-  transition: background 0.3s;
-}
-
-/* Style Swiper navigation buttons */
-.swiper-button-prev,
-.swiper-button-next {
-  z-index: 9999999;
-  background-color: #286961; /* Teal background */
-  color: white;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Class for animating the city name */
+.city-animation {
+  display: inline-block;
+  animation: fadeInOut 2s ease-in-out infinite;
+  color: red;
   font-weight: bold;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  font-size: 16px;
-  font-weight: bold;
+.para p{
+  font-size: 20px;
+  font-weight: 600;
+  color: darkred;
 }
+ .crd{
+  border-radius: 33px;
+ }
 
-.view-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(40, 105, 97, 0.5);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  border-radius: 0.5rem;
-}
-
-.card:hover .view-overlay {
-  opacity: 1;
-}
-
-.view-text {
-  color: #fff;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-.back {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-}
-
-/* Position buttons nicely */
-.swiper-button-prev {
-  left: -20px;
-}
-.swiper-button-next {
-  right: -20px;
-}
-
-/* Ensure swiper navigation buttons are above cards */
-.swiper {
-  position: relative;
-  padding: 0 30px; /* give room for navigation arrows */
-}
-
-.projects-swiper-container {
-  position: relative;
-  padding: 0 40px; /* adds space for arrows */
-  overflow: visible; /* ensure arrows aren't clipped */
-}
-
-
-.project-card {
-  overflow: hidden;
-  border-radius: 8px;
-  position: relative;
-}
-
-.view-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.project-card:hover .view-overlay {
-  opacity: 1;
-}
-
-.view-text {
-  color: white;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.location-section {
-  background-color: #f5f5f5;
-  position: relative;
-  overflow: hidden;
-}
-
-.map-container {
-  position: relative;
-}
-
-.map-pin {
-  position: absolute;
-  width: 20px;
-  height: 30px;
-  background-color: #237b7b;
-  border-radius: 50% 50% 50% 0;
-  transform: rotate(-45deg);
-  border: 2px solid #fff;
-  z-index: 2;
-}
-
-.map-pin::after {
-  content: '';
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 6px;
-  height: 6px;
-  background: white;
-  border-radius: 50%;
-}
+ 

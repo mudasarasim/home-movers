@@ -26,7 +26,7 @@ const NavbarSection = () => {
               <img src="img/logo.png" alt="Logo" style={{ height: '40px' }} />
             </Col>
             <Col md={4} xs={12} className="text-center mb-2 mb-md-0">
-              <FaPhoneAlt className="me-2" /> +971 56 239 0333
+              <FaPhoneAlt className="me-2" /> +971 56 239 0333 
             </Col>
             <Col md={4} xs={12} className="text-md-end text-center">
               <FaEnvelope className="me-2" /> info@ehome-emovers.ae
